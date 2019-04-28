@@ -5,21 +5,29 @@
     background-position: top center;
     margin: 0;
     padding-bottom: 5%;
-    /*font-family: "Lato", sans-serif;*/
     font-family: 'Heebo', sans-serif;
 }
 
-.whitebox {
+div.whitebox {
     background-color: #F0F8FF;
-    opacity: .75;
+    opacity: .90;
     margin: 5%;
     padding: 2%;
     width: 90%;
+    display: inline-block;
+}
+
+.big-whitebox {
+  text-align: center;
 }
 
 h1 {
     display: inline;
 }
+
+
+
+
 
 .footer {
   color: white;
