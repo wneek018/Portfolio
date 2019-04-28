@@ -53,6 +53,10 @@ h1 {
   text-align: right;
 }
 
+#center {
+  text-align: center;
+}
+
 #left {
   text-align: left;
 }
