@@ -22,15 +22,17 @@ h1 {
 }
 
 .footer {
-  color: white;
+  color: black;
   text-align: center;
+  background-color: #F0F8FF;
+  opacity: .9;
 }
 
 #footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 90%;
 }
 
 #logo-img {
