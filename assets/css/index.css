@@ -17,6 +17,14 @@ div.whitebox {
     display: inline-block;
 }
 
+div.blackbox {
+  background-color: black;
+  opacity: .90;
+  display: inline-block;
+  margin: 5%;
+  padding: 2%;
+}
+
 h1 {
     display: inline;
 }
