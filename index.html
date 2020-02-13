@@ -8,9 +8,13 @@
     <title>Wiggie's Website</title>
     <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
@@ -32,10 +36,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html">About</a>
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="images/resume.pdf">Resume</a>
@@ -45,30 +49,176 @@
         </div>
     </nav>
 
-    <div class="whitebox">
-        <h2>About Me</h2>
-        <p>I'm Wendy and welcome to my page. When I'm not crunching numbers or sitting in traffic, I'm searching for the
-            best pizza joint. (So far it's Bar del Corso in Beacon Hill - they also have delicious arancini.) In my
-            quiet moments I often find myself complaining about the weather and wondering why I don't live on a beach.
-        </p>
-        <p>After my annoyance with the weather subsides I can usually be found walking around the city, exploring
-            unknown streets and trying to find every entrance into the Seattle underground.</p>
-    </div>
-
-    <footer class="footer mt-auto py-3" id="footer">
-        <div class="row">
-            <div class="col-md" id="right">
-                <span id="footer"><a href="mailto:wiggwendy@gmail.com">wiggwendy@gmail.com</a></span>
-                <span id="footer">(503) 808-0671</span>
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <h2 class="section-heading">About Me</h2>
+                    <p class="text-black-50">I'm Wendy and welcome to my page. When I'm not crunching numbers or sitting
+                        in traffic, I'm searching for the
+                        best pizza joint. (So far it's Bar del Corso in Beacon Hill - they also have delicious
+                        arancini.) In my
+                        quiet moments I often find myself complaining about the weather and wondering why I don't live
+                        on a beach.
+                    </p>
+                    <p class="text-black-50">After my annoyance with the weather subsides I can usually be found walking
+                        around the city,
+                        exploring the mountains or planning my next international trip.</p>
+                </div>
             </div>
-            <div class="col-md" id="left">
-                <a href="https://github.com/wneek018"><img src="images/github.png" alt="Github"
-                        style="width:50px;height:50px;" id="logo-img"></a>
-                <a href="https://www.linkedin.com/in/wendy-wigg-b33a5099/"><img src="images/linkedin.png" alt="Linkedin"
-                        style="width:50px;height:50px;" id="logo-img"></a>
+            <img src="img/ipad.png" class="img-fluid" alt="">
+        </div>
+    </section>
+
+
+    <!-- Portfolio Grid -->
+    <section class="page-section" id="portfolio">
+        <div class="container">
+            <section class="bg-light page-section" id="portfolio">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Portfolio</h2>
+                        <h3 class="section-subheading text-muted"></h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" href="https://jesseboe.github.io/GroupProject/">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/tastesandtunes.png" alt="tastes & tunes">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Tastes & Tunes</h4>
+                            <p class="text-muted">For the food & party planner. Pick a playlist based on the food
+                                you're
+                                prepping. Created using JavaScript, Firebase, HTML & CSS.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" href="https://wneek018.github.io/TriviaGame/">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/triviagame.png" alt="trivia game">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Harry Potter Trivia</h4>
+                            <p class="text-muted">Test your Harry Potter knowledge with this timed multiple choice
+                                game!
+                                Created using JavaScript, HTML & CSS.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" href="https://uwproject2.herokuapp.com/signin">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/taskmaster3000.png" alt="task master 3000">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>TaskMaster3000</h4>
+                            <p class="text-muted">Log in and keep your tasks - add, edit and delete tasks, or mark
+                                them
+                                as complete when you're finished. Created using Passport.js, Node.js, Express, MySQL
+                                and
+                                deployed to Heroku.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" href="https://fast-refuge-88335.herokuapp.com/">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/eatdaburger.png" alt="eat da burger">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Eat the Burger</h4>
+                            <p class="text-muted">Track all the burgers you've tried. Add and devour burgers, or
+                                delete
+                                if you made a typo. Created using Node.js, Express, MySQL and Handlebars. Deployed
+                                to
+                                Heroku.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" href="https://uw-bootcamp-project3.herokuapp.com/">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/saywhat.png" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Say Whaaaat?</h4>
+                            <p class="text-muted">A multiplayer Wheel of Fortune-style game that allows up to 4
+                                users to
+                                play and chat together. Created using React, Socket.io, Passport.js, MongoDB and
+                                Mongoose. Deployed to Heroku.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Stay tuned for upcoming projects!</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Wiggie's Website 2020</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                            <a href="https://github.com/wneek018"><img src="images/github.png" alt="Github"
+                                    style="width:50px;height:50px;" id="logo-img"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/wendy-wigg-b33a5099/"><img src="images/linkedin.png"
+                                    alt="Linkedin" style="width:50px;height:50px;" id="logo-img"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item">
+                            <a>(503) 808-0671</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="mailto:wiggwendy@gmail.com">wiggwendy@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
